@@ -12,7 +12,12 @@ config_s2i
 
 echo "---> Installing application source"
 cp /tmp/src/*.html ./
+
 echo "im new here" >> about.html
+
+## move files from move-me
+cp -Rf /tmp/src/move-me/*.html ./
+
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
 
 ######## CUSTOMIZATION ENDS HERE ############
